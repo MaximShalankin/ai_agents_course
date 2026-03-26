@@ -220,3 +220,7 @@ data/**/*.parquet
 data/**/*.mp4
 data/**/*.rtf
 data/**/*.pdf
+
+**/2026*
+
+.python-version

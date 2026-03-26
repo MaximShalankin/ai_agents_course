@@ -63,7 +63,7 @@ except ImportError:
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 # Данные соревнования: final_project/data (на уровень выше ai_agent_step_by_step)
-DATA_DIR = SCRIPT_DIR.parent / "data"
+DATA_DIR = SCRIPT_DIR / "data"
 ARTIFACTS_DIR = SCRIPT_DIR / "artifacts"
 
 # Имена файлов данных (типичная структура Kaggle)
@@ -249,7 +249,7 @@ def _get_llm():
         from dotenv import load_dotenv
 
         # Загружаем .env из корня проекта
-        env_path = SCRIPT_DIR.parent.parent.parent / ".env"
+        env_path = SCRIPT_DIR / ".env"
         if env_path.exists():
             load_dotenv(env_path)
 
@@ -1031,8 +1031,7 @@ def _load_kaggle_env() -> None:
     from dotenv import load_dotenv
 
     # Load from project root .env
-    # Path: ai_agents_course/final_project/ai_agent_step_by_step -> parent.parent.parent = project root
-    project_root = SCRIPT_DIR.parent.parent.parent
+    project_root = SCRIPT_DIR
     env_path = project_root / ".env"
 
     if env_path.exists():
