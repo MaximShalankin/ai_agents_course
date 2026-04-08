@@ -1,0 +1,1 @@
+Мультиагентная система с паттерном Supervisor (langgraph-supervisor): супервизор управляет агентами coder и tester. Coder пишет код (инструмент write_python_code), tester запускает его (run_tests). Запуск: `run_demo.py` — стрим по шагам, артефакт: artifacts/supervisor_demo.json.

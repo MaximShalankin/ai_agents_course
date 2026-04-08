@@ -220,3 +220,25 @@ data/**/*.parquet
 data/**/*.mp4
 data/**/*.rtf
 data/**/*.pdf
+
+# Claude — локальные настройки (могут содержать ключи и пути к shell-командам)
+.claude/
+
+# Тяжёлые артефакты сессий агента (абсолютные пути, большие JSON)
+ai_agents_course/final_project/ai_agent_step_by_step/artifacts/
+
+# Каталоги с результатами прогонов (оба написания)
+**/artifacts/
+**/artefacts/
+
+# Домашка по калькулятору (локальные ноутбуки/черновики)
+**/homework_calc_number/
+
+# example_4 video RAG — локально скачанные веса Whisper (сотни МБ–ГБ)
+ai_agents_course/topic_1_rag/example_4_video_rag/models/
+
+# Вложенный git-репозиторий внутри примера MCP (не submodule — клоны не получат содержимое)
+ai_agents_course/topic_2_agents/example_4_mcp_route_agents/kaggle-mcp/
+
+# JSON — дампы/результаты/сэмплы локально (не в репозитории)
+**/*.json
