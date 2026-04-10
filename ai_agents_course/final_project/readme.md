@@ -27,24 +27,24 @@
 
 ### Поток по архитектурным измерениям
 
-<img src="imgs/viz_01_alluvial.png" alt="Аллювиальная диаграмма: архитектура и tier" width="500">
+<img src="imgs/viz_01_alluvial.png" alt="Аллювиальная диаграмма: архитектура и tier" width="1000">
 
 Поток команд по цепочке (фреймворк → LLM → безопасность → tier): толщина ленты — сколько команд на пути, цвет — исходная категория.
 
 ### Поток по технологическому стеку
 
-<img src="imgs/viz_12_tech_alluvial.png" alt="Аллювиальная диаграмма: технологический стек" width="500">
+<img src="imgs/viz_12_tech_alluvial.png" alt="Аллювиальная диаграмма: технологический стек" width="1000">
 
 Поток по слоям стека (фреймворк → RAG → vector DB → стратегия LLM); про связки решений, не про баллы.
 
 ### Сеть неочевидных зависимостей (PMI)
 
-<img src="imgs/viz_17_nonobvious_dependencies_network.png" alt="Граф PMI между технологиями" width="500">
+<img src="imgs/viz_17_nonobvious_dependencies_network.png" alt="Граф PMI между технологиями" width="1000">
 
 Узлы — технологии (с группировкой по смыслу), рёбра — PMI; размер узла — частота. Неочевидные созависимости, не просто популярные пары.
 
 ### Тепловая карта пересечений агентных сигналов
 
-<img src="imgs/viz_18_agent_dependencies_heatmap.png" alt="Тепловая карта Jaccard по агентным токенам" width="600">
+<img src="imgs/viz_18_agent_dependencies_heatmap.png" alt="Тепловая карта Jaccard по агентным токенам" width="1000">
 
 Jaccard между токенами (RAG/agents/tooling/runtime/safety)
